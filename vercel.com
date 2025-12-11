@@ -2,37 +2,26 @@
   "version": 2,
   "builds": [
     {
-      "src": "*.js",
-      "use": "@vercel/node"
-    },
-    {
       "src": "*.html",
       "use": "@vercel/static"
     }
   ],
   "routes": [
     {
+      "src": "/style.css",
+      "dest": "/style.css"
+    },
+    {
+      "src": "/script.js",
+      "dest": "/script.js"
+    },
+    {
+      "src": "/app.js",
+      "dest": "/app.js"
+    },
+    {
       "src": "/(.*)",
       "dest": "/index.html"
-    }
-  ],
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "X-Content-Type-Options",
-          "value": "nosniff"
-        },
-        {
-          "key": "X-Frame-Options",
-          "value": "DENY"
-        },
-        {
-          "key": "X-XSS-Protection",
-          "value": "1; mode=block"
-        }
-      ]
     }
   ]
 }
