@@ -1,0 +1,16 @@
+{
+  "name": "temp-mail-pro",
+  "version": "1.0.0",
+  "description": "Professional Temporary Email Service",
+  "scripts": {
+    "start": "node server.js",
+    "build": "echo 'Building...'"
+  },
+  "keywords": ["temp-mail", "email", "anonymous"],
+  "author": "DEMON EYE SUPPORT & বিপ্লবের 𝐋𝐮𝐜𝐢𝐟𝐞𝐫....!!🌈™",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
+}
