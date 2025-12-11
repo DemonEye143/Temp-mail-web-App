@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TempMail Pro | DEMON EYE SUPPORT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="bg-grid"></div>
+    <div class="floating-balls"></div>
+    
+    <!-- Main App Container -->
+    <div class="app-container">
+        
+        <!-- Header Section -->
+        <header class="header animate__animated animate__fadeInDown">
+            <div class="logo-container">
+                <div class="logo-icon">
+                    <i class="fas fa-mail-bulk"></i>
+                    <div class="glow-effect"></div>
+                </div>
+                <div class="logo-text">
+                    <h1 class="gradient-text">TempMail <span class="pro-badge">PRO</span></h1>
+                    <p class="tagline">Anonymous & Secure Temporary Email Service</p>
+                </div>
+            </div>
+            
+            <div class="creator-info">
+                <div class="creator-badge">
+                    <i class="fas fa-eye demon-eye"></i>
+                    <span class="creator-name"><strong>DEMON EYE SUPPORT</strong></span>
+                </div>
+                <div class="creator-badge">
+                    <i class="fas fa-crown"></i>
+                    <span class="creator-name"><strong>বিপ্লবের 𝐋𝐮𝐜𝐢𝐟𝐞𝐫....!!🌈™</strong></span>
+                </div>
+                <p class="telegram-channel">
+                    <i class="fab fa-telegram"></i> 
+                    Telegram: <strong>@demon_eye_support</strong>
+                </p>
+            </div>
+        </header>
+
+        <!-- Control Panel -->
+        <section class="control-panel animate__animated animate__fadeInUp">
+            <div class="panel-card">
+                <div class="card-header">
+                    <h2><i class="fas fa-envelope"></i> Your Temporary Email</h2>
+                    <div class="status-indicator">
+                        <span class="status-dot active"></span>
+                        <span>Active</span>
+                    </div>
+                </div>
+                
+                <div class="email-display-container">
+                    <div class="email-display" id="current-email">
+                        <i class="fas fa-envelope-open-text"></i>
+                        <span class="email-text">generating...</span>
+                    </div>
+                    <div class="email-actions">
+                        <button class="btn btn-primary btn-glow" id="generate-email">
+                            <i class="fas fa-plus-circle"></i> Generate New
+                        </button>
+                        <button class="btn btn-secondary" id="copy-email">
+                            <i class="fas fa-copy"></i> Copy
+                        </button>
+                        <button class="btn btn-danger" id="delete-all">
+                            <i class="fas fa-trash-alt"></i> Delete All
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Stats Cards -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>Email Lifetime</h3>
+                            <p class="stat-value">24 <span>Hours</span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>Security Level</h3>
+                            <p class="stat-value security-high">High</p>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-envelope-open-text"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>Messages</h3>
+                            <p class="stat-value" id="message-count">0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Email Inbox Section -->
+        <section class="inbox-section animate__animated animate__fadeInUp">
+            <div class="inbox-header">
+                <h2><i class="fas fa-inbox"></i> Inbox <span class="badge" id="inbox-count">0</span></h2>
+                <div class="inbox-controls">
+                    <button class="btn btn-refresh" id="refresh-inbox">
+                        <i class="fas fa-sync-alt"></i> Refresh
+                    </button>
+                    <button class="btn btn-filter" id="filter-emails">
+                        <i class="fas fa-filter"></i> Filter
+                    </button>
+                </div>
+            </div>
+            
+            <div class="inbox-container">
+                <div class="email-list" id="email-list">
+                    <!-- Dynamic emails will load here -->
+                    <div class="empty-inbox">
+                        <i class="fas fa-envelope-open"></i>
+                        <h3>Inbox is Empty</h3>
+                        <p>Your temporary emails will appear here</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <h2 class="section-title"><i class="fas fa-star"></i> Premium Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-secret"></i>
+                    </div>
+                    <h3>100% Anonymous</h3>
+                    <p>No registration required. Complete privacy guaranteed.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Instant Setup</h3>
+                    <p>Get your temporary email in seconds. No delays.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Friendly</h3>
+                    <p>Works perfectly on all devices and screen sizes.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>TempMail PRO</h3>
+                    <p>Professional Temporary Email Solution</p>
+                </div>
+                
+                <div class="footer-creators">
+                    <h4>Created By:</h4>
+                    <div class="creator-tags">
+                        <span class="creator-tag"><strong>DEMON EYE SUPPORT</strong></span>
+                        <span class="creator-tag"><strong>CREDIT BY 𝐋𝐮𝐜𝐢𝐟𝐞𝐫....!!🌈™</strong></span>
+                    </div>
+                    <p class="telegram-info">
+                        <i class="fab fa-telegram"></i> Telegram Channel: 
+                        <strong>@demon_eye_support</strong>
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="#"><i class="fas fa-shield-alt"></i> Privacy Policy</a>
+                    <a href="#"><i class="fas fa-file-contract"></i> Terms</a>
+                    <a href="#"><i class="fas fa-question-circle"></i> Help</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2024 TempMail PRO. All rights reserved.</p>
+                <p class="version">Version 1.0.0</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
